@@ -1,49 +1,293 @@
-	<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Event Tickets Order Form</title>
-		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
-		<link rel="stylesheet" type="text/css" href="styles/main.css">		
-	</head>
+<!DOCTYPE html>
+<html lang="en"><!-- html tag -->
 
-	<body>
+	<head><!-- head tag -->
+
+		<meta charset="utf-8" />
+
+		<title>Event Tickets Order Form</title><!--Title of the home page created-->
+
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css"><!--normalize.css file linked to index.html-->
+
+		<link rel="stylesheet" type="text/css" href="styles/main.css"><!--main.css file linked to index.html-->
+
+	</head><!-- head tag ended -->
+
+	<body><!-- body tag -->
+
+		<form name="Order_form" action="place_order.html" method="post">
+
 		<div id="frame">
-			<header>
-				<img src="images/ornament-logo.png" alt="New Year Central Logo" style="width: 400px;">
-				<div id="header-line-1">New Year Central</div>
-				<div id="header-line-2">For the child in all of us!</div>
-			</header>
+			<!--Div Tag created-->
+
+			<header><!-- header tag -->
+
+				<img src="images/ornament-logo.png" alt="New Year Central Logo" style="width: 400px;"><!--Ornament logo added to the webpage-->
+
+				<div id="header-line-1">New Year Central</div><!--1st heading of the code wirten-->
+
+				<div id="header-line-2">For the child in all of us!</div><!--2nd heading of the code wirten-->
+
+			</header><!-- header tag ended -->
 
 			<!-- navigation starts -->
-			<nav id="nav_menu">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about_us.html">About Us</a></li>
-					<li><a href="products.html">Our Products</a></li>
-					<li><a href="tickets_order_form.html" class="current">Event Tickets</a></li>
-					<li><a href="contact_us.html">Contact Us</a></li>
-				</ul>
-			</nav>
+			<nav id="nav_menu"><!--nav tag creted-->
 
-			<aside>
-				<div class="sidebar-title">Products of The Week...</div>
-				<ul>
-					<li><a href="assets/products/berry-garland.html">Natural Holly Berry Garland, 5f - $74.99</a></li>
-					<li><a href="assets/products/artificial-red-berry-garland.html">Artificial Red Berry and White Edge Holly Leaf Christmas Garland, 5.5f - $38.99</a></li>
-					<li><a href="assets/products/christmas-berries-stems.html">Christmas Berries Red Stems Evergreen Pine Branches, 8pcs - $15.99</a></li>
-				</ul>
-			</aside>
+				<ul><!--unordered list created
+				-->
+					<li><a href="index.html">Home</a></li><!--index.html file linked to home tab-->
+
+					<li><a href="about_us.html">About Us</a></li><!--about_us.html file linked to about Us tab-->
+
+
+					<li><a href="products.html">Our Products</a></li><!--products.html file linked to products tab-->
+
+
+					<li><a href="tickets_order_form.html" class="current">Event Tickets</a></li><!--tickets_order_form.html file linked to Event tickets tab-->
+
+
+					<li><a href="contact_us.html">Contact Us</a></li><!--contact_us.html file linked to contact us tab-->
+
+				</ul><!--unordered list tag end-->
+
+			</nav><!--nav tag end-->
+
+			<aside><!--Aside tag start-->
+
+				<div class="sidebar-title">Products of The Week...</div><!--product of the week div tag created-->
+
+				<ul><!--unordered list stared for product of the week-->
+
+					<li><a href="assets/products/berry-garland.html">Natural Holly Berry Garland, 5f - $74.99</a></li><!--product of the week one-->
+
+					<li><a href="assets/products/artificial-red-berry-garland.html">Artificial Red Berry and White Edge Holly Leaf Christmas Garland, 5.5f - $38.99</a></li><!--product of the week two-->
+
+					<li><a href="assets/products/christmas-berries-stems.html">Christmas Berries Red Stems Evergreen Pine Branches, 8pcs - $15.99</a></li><!--product of the week three-->
+					
+				</ul><!--unordered list tag endded-->
+
+			</aside><!-- aside tag ended -->
 			
-			<main>
-				<h1>Order Event Tickets</h1>
+			<main><!-- main tag -->
+
+				<h1>Order Event Tickets</h1><!--Heading 1 created for order event tickets-->
+
 				<!-- The form starts here... -->
+
+				<form action="order_form" action="place_order.html" method="post"><!--form action created-->
+
+					<fieldset><!--Fieldset tag created-->
+						
+						<legend>Member Information</legend><!--member information named legend tag-->
+
+						<label for="email">E-mail:</label><!--Email field lable created-->
+						<input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus 
+						title="Enter Your Email Address"><!--Email input field created with pattern-->
+						
+						<br><!--line break-->
+
+						<label for="first_name">First Name:</label><!--FIrst name field lable created-->
+						<input type="text" name="first_name" id="first_name" required 
+						title="Enter your First Name"><!--First name input field-->
+						
+						<br><!--linke break-->
+
+						<label for="last_name">Last Name:</label><!--last name field lable created-->
+						<input type="text" name="last_name" id="last_name" required 
+						title="Enter your Last Name"><!--last name input field -->
+						
+						<br><!--line break-->
+
+						<label for="address">Address:</label><!--address field lable created-->
+						<input type="text" name="address" id="address" 
+						title="Enter your Address"><!--address input field-->
+						
+						<br><!--line break-->
+
+						<label for="city">City:</label><!--city field lable created-->
+						<input type="text" name="city" id="city" required 
+						title="Enter city Name"><!--city input field-->
+						
+						<br><!--line break-->
+
+						<label for="province">Province:</label><!--province field lable created-->
+						<input type="text" name="province" id="province" required pattern="[A-Za-z]{2}" 
+						title="Two letter abbrevations for province" placeholder=" 2-character code"><!--province input field-->
+						
+						<br><!--line break-->
+
+						<label for="postal_code">Postal Code:</label><!--postal code field lable created-->
+						<input type="text" name="postal_code" id="postal_code" required pattern="[A-Za-z0-9]{6, }" 
+						title="Must be 6 alphanumeric characters long" placeholder="6 characters"><!--postal code input field-->
+						
+						<br><!--line break-->
+
+						<label for="phone">Phone Number:</label><!--phone number field lable created-->
+						<input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+						title="Must be in the 999-999-9999 format" placeholder="999-999-9999"><!--phone number input field-->
+					
+					</fieldset><!--Fieldset tag ended-->
+					
+					<fieldset><!--Fieldset tag created-->
+
+						<legend>Ordering Information</legend><!--Ordering information legend-->
+
+						<label for="events">Event:</label><!--event lable created-->
+
+						<select id="events" name="events"><!--select tag started-->
+
+							<option value="event_1" selected>Cookie Decoration Contest</option><!--lable options created one-->
+
+							<option value="event_2">Tree Decoration Contest</option><!--lable options created two-->
+
+							<option value="event_3">Gift of Light Ride-Along</option><!--lable options created three-->
+
+							<option value="event_4">Breakfast with Santa</option><!--lable options created four-->
+
+						</select><!--select tag ended-->
+						
+						<br><!--line break-->
+
+						<label for="Order">Order Type:</label><!--order type lable created-->
+
+						<select id="Orders" name="Orders"><!--sekect tag created-->
+
+							<option value="order_type_1" selected>Member Package</option><!--order type 1-->
+
+							<option value="order_type_2">Donor Package</option><!--order type 2-->
+
+							<option value="order_type_3">Single Tickets</option><!--order type 3-->
+
+		
+
+						</select><!--select tag ended-->
+						
+						<br><!--line break-->
+
+						<label for="tickets_Number">Number Of Tickets:</label><!--Number of tickets label created-->
+
+						<input type="number" name="tickets" id="tickets"
+						title="Enter number of single tickets" placeholder="Number of single tickets" min="1"><!--Number of tickets Input-->
+						
+						<br><!--line break-->
+					
+					</fieldset><!--Fieldset tag ended-->
+
+					<fieldset><!--Fieldset tag created-->
+
+						<legend>Payment Method</legend><!--Payment method legend created-->
+
+						<input type="radio" id="bill_Me" name="method" value="bill_Me"><!--Radio button created for bill me-->
+
+						<label for="bill_Me" class="radio_class">Bill Me</label><!--Bill Me created as radio-->
+
+						<input type="radio" id="credit_Card" name="method" value="credit_Card"><!--Radio button created for bill me-->
+
+						<label for="credit_Card" class="radio_class">Credit Card</label><!--Credit card created as radio-->
+
+					</fieldset><!--Fieldset tag ended-->
+					
+					<fieldset><!--Fieldset tag created-->
+
+						<legend>Credit Card Information</legend><!--Credit card information legend created-->
+
+						<label for="card_Type">Card Type:</label><!--card type lable created-->
+
+						<select id="card_Type" name="card_Type"><!--select tag stared-->
+
+							<option value="visa_Card" selected>Visa</option><!--Visa card option-->
+
+							<option value="master_Card">Master Card</option><!--master card option-->
+							
+							<option value="discover">Discover</option><!--discover option-->
+
+						</select><!--select tag ended-->
+						
+					<br><!--line break-->
+
+				<label for="number">Card Number:</label><!--Card number lable created-->
+
+				<input type="text" name="card_Number" id="card_Number" required pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" 
+				title="Format - xxxx-xxxx-xxxx-xxxx" placeholder="16 digits" ><!--card number input-->
 				
-			</main>
+				<br><!--line break-->
+					
+						<label for="months">Expiration Date:</label><!--expiration date lable created-->
+
+						<select class="months" name="months" id="months"><!--month selection tag started-->
+
+							<option value="January" selected>January</option><!--default selected month option 1-->
+
+							<option value="Febrauary">Febrauary</option><!--month option 2-->
+
+							<option value="March">March</option><!--month option 3-->
+							
+							<option value="April">April</option><!--month option 4-->
+
+							<option value="May">May</option><!--month option 5-->
+							
+							<option value="June">June</option><!--month option 6-->
+							
+							<option value="July">July</option><!--month option 7-->
+							
+							<option value="August">August</option><!--month option 8-->
+							
+							<option value="September">September</option><!--month option 9-->
+							
+							<option value="October">October</option><!--month option 10-->
+							
+							<option value="November">November</option><!--month option 11-->
+							
+							<option value="December">December</option><!--month option 12-->
+				  		
+						</select><!--month selection tag ended-->
+						
+						<select class="years" name="years" id="years"><!--Year selection tag started-->
+						
+							<option value="2021" selected>2021</option><!--default selected option 1-->
+						
+							<option value="2022">2022</option><!--year option 2-->
+						
+							<option value="2023">2023</option><!--year option 3-->
+						
+							<option value="2024">2024</option><!--year option 4-->
+						
+							<option value="2025">2025</option><!--year option 5-->
+						
+							<option value="2026">2026</option><!--year option 6-->
+						
+							<option value="2027">2027</option><!--year option 7-->
+						
+						</select><!--year selection tag ended-->
+						
+						<br><!--line break created-->
+					
+					</fieldset><!--fieldset tag ended-->
+				
+					<fieldset><!--fieldset tag stared-->
+
+						<legend>Submit your Order </legend><!--submit your order legend created-->
+
+					  <label>&nbsp;</label>
+
+						<input type="submit" name="submit_Button" value="Submit"><!--Submit button created-->
+
+						<input type="reset" name="reset_Button" value="Reset Fields"><!--Reset field created-->
+	
+					</fieldset><!--fieldset tag ended-->
+
+				</form><!--form tag ended-->
+					
+			</main> <!-- main tag ended -->
 			
-			<footer>
-				<p>&copy; 2021 New Year Central. Created by Johnny White.</p>
-			</footer>
-		</div>
-	</body>
-</html>
+			<footer> <!-- footer tag -->
+
+				<p>&copy; 2021 New Year Central. Created by Johnny White.</p><!--Copyright footer-->
+
+			</footer><!-- footer tag ended -->
+
+		</div><!-- div tag ended -->
+
+	</body><!-- body tag ended -->
+
+</html><!-- html tag ended -->

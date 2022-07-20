@@ -1,184 +1,201 @@
 * {
-	margin: 0;
-	padding: 0;
-}
+	margin: 0;/* Margin set to zero */
+	padding: 0;/* Padding set to zero */}
 
 body  {	
-	background-image: url("../images/berry.jpg");
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 100%;
-}
+	background-image: url("../images/berry.jpg");/* image added */
+	font-family: Verdana, Arial, Helvetica, sans-serif;/* fonts change */
+	font-size: 100%;/* fonts size */}
 
-div#frame {
-	margin: 25px auto;
-	padding: 20px 30px 20px 20px;
-	width: 50%;
-	min-width: 900px;
-	background-color: #ffffff;	
-	background-image: linear-gradient(#ffffff 20%, #fdf7e8 70%, #ffffff 100%);
-	border: 2px solid #009926;
-	border-radius: 8px;
-	box-shadow: 0px 0px 90px 2px #008020;
-}
+div#frame {/* div tag ID-frame */
+	margin: 25px auto;/* margin set for frame */
+	padding: 20px 30px 20px 20px;/* padding set for frame */
+	width: 50%;/* width adjusted for frame */
+	min-width: 900px;/* minimum width set for frame */
+	background-color: #ffffff;/* background fro frame */	
+	background-image: linear-gradient(#ffffff 20%, #fdf7e8 70%, #ffffff 100%);/* background for frame */
+	border: 2px solid #009926;/* broder fro frame */
+	border-radius: 8px;/* border radius fro frame */
+	box-shadow: 0px 0px 90px 2px #008020;/* box shadow for frame */}
 
 p {
-	margin: 20px 0px;
-}
+	margin: 20px 0px;}/* paragraph margin set */
 
 a {
-	color: #008020; 
-}
+	color: #008020;} /* colour set */
 
 a:link, a:visited { 
-	text-decoration: none; 
-}
+	text-decoration: none;}  /* visited link text decoration */
 
 a:hover, a:focus { 
-    text-decoration: underline; 
-}
+    text-decoration: underline;}  /* text decoration of link when hover */
 
 /* Header */
 header {
-	height: 160px;
-	border-bottom: 2px solid #e8b417;
-}
+	height: 160px;  /* header height adjusted */
+	border-bottom: 2px solid #e8b417;} /* border bottom adjusted */
 	
 header img { 
-	float: left; 
-} 
+	float: left; }  /* header image adjusted */ 
 
 header div#header-line-1 {
-	font-size: 300%;
-	font-weight: bold;	
-	text-align: right;
-	color: #ecc03b;
-	text-shadow: 2px 2px 2px black;
-}
+	font-size: 300%; /* font size mannually set for header line 1 */
+	font-weight: bold;	 /* font weight set */
+	text-align: right;	 /* text allogned */
+	color: #ecc03b;	 /* text colour changed */
+	text-shadow: 2px 2px 2px black;} /* shadow added to text */
 
 header div#header-line-2 {
-	font-size: 130%;
-	font-weight: bold;
-	text-align: right;
-	font-style: italic;
-	color: #008020;
-}
+	font-size: 130%; /* font size mannually set for header line 2 */
+	font-weight: bold;/* font weight set */
+	text-align: right; /* text allogned */
+	font-style: italic;/* text style changed */
+	color: #008020;}/* text colour changed */
 
 /* aside */
 aside {
-	width: 230px;
-	float: left;
-	margin: 30px 10px 0px 0px;
+	width: 230px; /* width adjusted */
+	float: left; /* float to left */
+	margin: 30px 10px 0px 0px; /* margin mannually adjusted */
 }
 
 aside div.sidebar-title {
-	font-size: 115%;
-	font-weight: bold;
-	color: #d1a215;
+	font-size: 115%; /* font size mannually set for sidebar title */
+	font-weight: bold;/* font weight set */
+	color: #d1a215;/* text colour changed */
 }
 
 aside ul {
-	margin: 15px 0px 0px 15px;
-}
+	margin: 15px 0px 0px 15px;} /* margin adjusted */
 
 aside ul li {
-	margin: 15px 0px 0px 0px;
-}
+	margin: 15px 0px 0px 0px;} /* margin adjusted */
 
 aside ul li a{
-	font-style: italic;
-	font-size: 90%;
-}
+	font-style: italic; /*font style changed */
+	font-size: 90%;}  /* font size changed */
 
 /* Main */
 main {
-	margin: 20px 0;
-	padding-left: 20px;
-	float: left;
-	width: 638px;
-	min-height: 600px;
-	border-left: 2px solid #e8b417;
-}
+	margin: 20px 0;  /* margin adjusted for main */
+	padding-left: 20px;  /* padding adjusted for main */
+	float: left; /* main float to left */
+	width: 638px; /* width set to main */
+	min-height: 600px; /* min height adjusted for main */
+	border-left: 2px solid #e8b417;} /* left border and color to main */
 
 main h1 { 
-	margin: 0;
-	font-size: 200%;
-}
+	margin: 0; /* margin set to 0 */
+	font-size: 200%;} /* font size changed for main h1 */
 
 main h1:first-letter { 
-	font-size: 240%;
-}
+	font-size: 240%;}/* font size set to 240% for the first letter of heading 1 */
 
 main h2 {
-	margin: 25px 0px;
-	font-size: 125%;
-}
+	margin: 25px 0px; /* margin adjusted for heading 2 */
+	font-size: 125%;} /*font size set adjusted for heading 2 */
 
 main h3 {	
-	font-size: 110%;
-}
+	font-size: 110%;}/*font size set adjusted for heading 3 */
 
 main ul#product-categories {
-	list-style-type: none;
-}
+	list-style-type: none;} /*unordered list style type set to none */
 
 main ul#product-categories li {
-	margin: 35px 0px;
-}
+	margin: 35px 0px;} /*unordered list margin setup */
 
 main ul#product-categories h3 {
-	margin-top: 10px;
-}
+	margin-top: 10px;}  /*top margin set for heading 3 */
 
 main ul#product-categories p{
-	margin-top: 5px;
-}
+	margin-top: 5px;}/*top margin set */
 
 main ul#product-categories img {
-	border: 2px solid #e8b417;
-	border-radius: 10px;
-	box-shadow: 0px 0px 6px 2px #ecc03b;
-}
+	border: 2px solid #e8b417; /* border set to 2px and color*/
+	border-radius: 10px; /* border radius set */
+	box-shadow: 0px 0px 6px 2px #ecc03b;}/*box shadow setup */
 
 /* the styles for the navigation menu */
 #nav_menu {
-	margin-top: 2px;
-}
+	margin-top: 2px;}/* top margin set to 2px */
 
+fieldset {
+    margin-top: 0.75em; /* fieldset top margin set */
+    margin-bottom: 0.75em;/* fieldset bottom margin set */
+    padding-top: .5em;}/* fieldset top padding set */
+
+legend{
+	color: grey; /* legend color set */
+	font-size: 85%;/* legend font size set */
+	font-weight: bold; /* font weight set */
+	margin-bottom: .5em;}/* bottom margin set */
+
+label, input, select {
+	font-size: 90%;
+	width: 15em;}/* font size set to 90% */
+		
+label {
+	float: left;/* lable float set to left */
+	width: 15em;/* lable width set to 15 em */
+	text-align: right;} /* text alligned to left */
+		
+input, select{
+	width: 15em;/* width set to 15em */
+	margin-left: .5em;/* left margin set to .5em */
+	margin-bottom: .5em;}/* bottom margin set to .5em */
+
+		
+.radio_class{
+	float:none;} /* float changed to none */
+
+input[type="radio"]{ /* type set to radio */
+	width: auto;/* width set to auto */
+	margin-left: 3em;} /* left margin adjusted */
+		
+.months{width: 7em;}/* monts input width set */
+		
+.years{width: 5em;} /* years input width set */
+
+input[type="Submit"] { /* bwidth set for submit button */
+	width: 10em;}
+
+input[type="Reset"] { /*width set for reset button */
+	width: 10em;}
+
+input:required, input[required] {
+	border: 2px solid orange;}/* border and color set fro required inputs */
+		
+input:valid {
+	border: 1px solid black;}/* border changed */
+		
 #nav_menu ul {
-	list-style-type: none;
-	position: relative;
-}
+	list-style-type: none; /* unordered list style type changed */
+	position: relative;}/* position setup */
 
 #nav_menu ul li {
-	float: left;
-}
+	float: left;}/* unordered list float to left */
 
 #nav_menu ul li a {
-    background-image: linear-gradient(#fdf7e8 15%, #ffffff 55%, #fdf7e8 100%);
-	width: 180px;
-	padding: 1em 0;
-	display: block;
-    text-align: center;    
-    text-decoration: none;  
-	font-weight: bold;
-}
+    background-image: linear-gradient(#fdf7e8 15%, #ffffff 55%, #fdf7e8 100%);/* background image color changed */
+	width: 180px;/* width adjusted */
+	padding: 1em 0;/* padding adjusted */
+	display: block; /* display type changed */
+    text-align: center;/* text allign setup */
+    text-decoration: none;/* text decoration set to none */
+	font-weight: bold;} /* font weight set to bold */
 
 #nav_menu ul li a:hover, #nav_menu ul li a:focus {
-	color: #d1a215;
-}
+	color: #d1a215;}/* color changed */
 
 #nav_menu a.current, #nav_menu a.current:hover, #nav_menu a.current:focus {
-	color: #d1a215;	
-	font-weight: bold;
-}
+	color: #d1a215;/* color changed */
+	font-weight: bold;}/* font weight set */
 
 /* Footer */
 footer {
-	clear: left;
-	border-top: 2px solid #e8b417;
-}
+	clear: left; /* footer clear set */
+	border-top: 2px solid #e8b417;}/*border top set */
 
 footer p {
-	font-size: 80%;
-	text-align: center;
-}
+	font-size: 80%; /* footer size changed */
+	text-align: center;}/* footer text alligned */
